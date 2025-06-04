@@ -1,7 +1,5 @@
-from tkinter import messagebox
 from tkinter import *
 from tkinter.filedialog import askopenfilename
-from tkinter import simpledialog
 import tkinter as tk
 from tkinter import filedialog
 import pandas as pd
@@ -9,17 +7,12 @@ import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 import plotly.express as px
-import plotly.graph_objects as go
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
-from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import f_classif
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 
@@ -29,10 +22,6 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import socket 
-from threading import Thread 
-from socketserver import ThreadingMixIn
-import pickle
 from PIL import Image, ImageTk
 import tkinter.ttk as ttk
 
